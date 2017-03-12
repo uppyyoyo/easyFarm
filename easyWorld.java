@@ -27,6 +27,7 @@ public class easyWorld extends World
         addObject(new countT(),950,130);
         addObject(new heart(),50,50);
         addObject(new scorebb(),950,220);
+        addObject(new exit(),920,375);
       
     }
     

@@ -22,7 +22,7 @@ public class firstWorld extends World
         addObject(new normal(), 500, 325);
         addObject(new hard(), 800, 325);
         addObject(new logo(), getWidth()/2, getHeight()/2 - 68);
-        
+        addObject(new linkhowto(), 890, 37);
         
         //Greenfoot.playSound("Farm Frenzy 1 ost Ingame Track.wav");
     }
