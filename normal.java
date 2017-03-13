@@ -16,6 +16,7 @@ public class normal extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new normalWorld());
+            firstWorld.backgroundMusic.pause();
         }
         if (Greenfoot.mouseMoved(this)) {
             setImage("normal2.png");
