@@ -16,6 +16,7 @@ public class hard extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new hardWorld());
+            firstWorld.backgroundMusic.pause();
         }
         if (Greenfoot.mouseMoved(this)) {
             setImage("hard2.png");

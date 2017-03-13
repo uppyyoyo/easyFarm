@@ -16,6 +16,8 @@ public class exit extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new firstWorld());
+            firstWorld.backgroundMusic.play();
+           
             scorecounteer.score = 0;
             hardWorld.monsterCount =40;
             normalWorld.monsterCount =30;

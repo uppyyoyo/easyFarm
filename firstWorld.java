@@ -13,7 +13,7 @@ public class firstWorld extends World
      * Constructor for objects of class firstWorld.
      * 
      */
-    GreenfootSound backgroundMusic = new GreenfootSound("Farm Frenzy 1 ost Ingame Track.wav");
+    static GreenfootSound backgroundMusic = new GreenfootSound("Farm Frenzy 1 ost Ingame Track.wav");
     public firstWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -36,7 +36,7 @@ public class firstWorld extends World
             doplay = true;
             
         }
-         
+         backgroundMusic.playLoop();
           //  backgroundMusic.pause();
         
         time--;
