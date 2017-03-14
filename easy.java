@@ -16,7 +16,7 @@ public class easy extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new easyWorld());
-            firstWorld.backgroundMusic.pause();
+            firstWorld.backgroundMusic.stop();
           
         }
          if (Greenfoot.mouseMoved(this)) {
