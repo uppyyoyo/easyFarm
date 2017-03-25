@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class raincloud here.
+ * Write a description of class raincloudForNormal here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class raincloud extends Actor
+public class raincloudForNormal extends Actor
 {
     int Timer4 = 350;
     
@@ -48,9 +48,11 @@ public class raincloud extends Actor
             int x = Greenfoot.getRandomNumber(100);
             int p = Greenfoot.getRandomNumber(2);
             int bw = Greenfoot.getRandomNumber(6);
-         
-            getWorld().addObject(new rain(this), getX()-50 + x, getY());
-            
+            if (bw > 0) {
+            getWorld().addObject(new rainNormal(this), getX()-50 + x, getY());
+            }else {
+            getWorld().addObject(new blackrainNormal(this), getX()-50 + x, getY());
+            }
            }
             
             
