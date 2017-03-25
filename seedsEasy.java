@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class seeds here.
+ * Write a description of class seedsEasy here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class seeds extends Actor
+public class seedsEasy extends Actor
 {
     /**
-     * Act - do whatever the seeds wants to do. This method is called whenever
+     * Act - do whatever the seedsEasy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
@@ -23,11 +23,8 @@ public class seeds extends Actor
         
       
         if (!check) {
-        if (isTouching(rainNormal.class)){
+        if (isTouching(rain.class)){
             getWorld().addObject(new flowers(), getX(), getY() - 23);
-            getWorld().removeObject(this);
-            check = true;
-        }else if (isTouching(blackrainNormal.class)) {
             getWorld().removeObject(this);
             check = true;
         }
@@ -42,7 +39,7 @@ public class seeds extends Actor
     
    }
     
-   public seeds(String pic){
+   public seedsEasy(String pic){
         setImage(pic + ".png");
     }
     
