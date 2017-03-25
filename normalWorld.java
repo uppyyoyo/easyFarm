@@ -88,7 +88,7 @@ public class normalWorld extends World
   
      public void randomrainCloud2(){
  
-            addObject(new raincloud(),50 + every, 1);
+            addObject(new raincloudForNormal(),50 + every, 1);
       
      }
     static int monsterCount = 30;
