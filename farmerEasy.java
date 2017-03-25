@@ -1,7 +1,7 @@
 import greenfoot.*;  
 
 
-public class farmer extends Actor
+public class farmerEasy extends Actor
 {
    
     
@@ -102,7 +102,7 @@ public class farmer extends Actor
     public void shoot(){
     
             int p = Greenfoot.getRandomNumber(3);
-            getWorld().addObject(new seeds(nameSeed[p]), getX(), getY()+30);
+            getWorld().addObject(new seedsEasy(nameSeed[p]), getX(), getY()+30);
      
        }
     
