@@ -22,6 +22,11 @@ public class back extends Actor
             normalWorld.monsterCount =30;
             easyWorld.monsterCount =20;
             scorecounteer.score = 0;
+            
+            
+            farmerEasy.power = 200;
+            farmer.power = 200;
+            carater.power = 200;
         }
         
         if (Greenfoot.mouseMoved(this)) {

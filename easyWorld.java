@@ -22,13 +22,16 @@ public class easyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 400, 1); 
-        addObject(new farmerEasy(),60, getHeight()/2 + 108);
+    
         addObject(new seedpack(),950,50);
         addObject(new countT(),950,130);
         addObject(new heart(),50,50);
         addObject(new scorebb(),950,220);
         addObject(new exit(),980,380);
         addObject(new playagain(),945,380);
+        addObject(new door(),945,314);
+        addObject(new door2(),60,314);
+        addObject(new farmerEasy(),getWidth()/2, getHeight()/2 + 108);
     }
     
     
@@ -112,5 +115,8 @@ public class easyWorld extends World
     }
         
         }
+        
+            
+        
 }
 

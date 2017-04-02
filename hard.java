@@ -15,7 +15,7 @@ public class hard extends Actor
     public void act() 
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new hardWorld());
+            Greenfoot.setWorld(new HellWorld());
             firstWorld.backgroundMusic.stop();
         }
         if (Greenfoot.mouseMoved(this)) {
