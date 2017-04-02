@@ -22,7 +22,7 @@ public class monsterL extends Actor
         setImage(pic + ".png");
     }
     public void delete(){
-        if (isTouching(flowers.class)) {
+        if (isTouching(flowers.class)||isTouching(tree.class)) {
             getWorld().removeObject(this);
           scorecounteer.score++;
         }else if (isAtEdge()) {
