@@ -20,6 +20,10 @@ public class playagain3 extends Actor
             hardWorld.monsterCount =40;
             normalWorld.monsterCount =30;
             easyWorld.monsterCount =20;
+            
+            farmerEasy.power = 200;
+            farmer.power = 200;
+            carater.power = 200;
             scorecounteer.score = 0;
         }
     }    

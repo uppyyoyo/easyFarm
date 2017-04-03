@@ -15,20 +15,23 @@ public class normalWorld extends World
     int Timer4 = 400;
     int Timer5 = 400;
     int Timer6 = 400;
-  
+    int Timer7 = 600;
     String[] pic = {"cloud","cloud2","cloud3"}; 
    
     public normalWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 400, 1); 
-        addObject(new farmer(),60, getHeight()/2 + 108);
+        
         addObject(new seedpack(),950,50);
         addObject(new countT(),950,130);
         addObject(new heart(),50,50);
         addObject(new scorebb(),950,220);
         addObject(new exit(),980,380);
         addObject(new playagain2(),945,380);
+        addObject(new door(),945,314);
+        addObject(new door2(),60,314);
+        addObject(new farmer(),getWidth()/2, getHeight()/2 + 108);
     }
     
     
@@ -41,6 +44,7 @@ public class normalWorld extends World
         Timer4--;
         Timer5--;
         Timer6--;
+        Timer7--;
         if (Timer == 0) {
             randomCloud();
             Timer = 90;
@@ -62,6 +66,10 @@ public class normalWorld extends World
         if (Timer6 == 0) {
         randomMonsterRight();
              Timer6 = 400;
+        }
+        if (Timer7 == 0) {
+        randomPlus();
+        Timer7 = 600;
         }
     }
     
@@ -106,6 +114,10 @@ public class normalWorld extends World
          addObject(new monsterR("monster" + x), 930, 320);
          monsterCount--;
         }
+        }
+        public void randomPlus(){
+            int x = Greenfoot.getRandomNumber(920)+ 40;
+            addObject(new plus(), x, 338);
         }
 }
 
