@@ -15,13 +15,18 @@ public class back extends Actor
     public void act() 
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new firstWorld());
+            Greenfoot.setWorld(new inputWorld());
             firstWorld.backgroundMusic.play();
             scorecounteer.score = 0;
             hardWorld.monsterCount =40;
             normalWorld.monsterCount =30;
             easyWorld.monsterCount =20;
             scorecounteer.score = 0;
+            input.text = "";
+            
+            farmerEasy.power = 200;
+            farmer.power = 200;
+            carater.power = 200;
         }
         
         if (Greenfoot.mouseMoved(this)) {

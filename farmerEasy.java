@@ -16,10 +16,15 @@ public class farmerEasy extends Actor
     
     public int seedInbag = 20;
     int time = 500;
-     int power = 200;
+    static int power = 200;
    
     public void act() {
-        
+        if (isTouching(door.class)) {
+            setLocation(120, getY());
+        }
+        if (isTouching(door2.class)) {
+            setLocation(890, getY());
+        }
         touchblackrainNormal ();
          if (isTouching(monsterL.class) ) {
             power = power - 1;
@@ -65,7 +70,7 @@ public class farmerEasy extends Actor
        if (Greenfoot.isKeyDown("right")) {
           switchImage();
            
-           if (getX() <= 930){
+           if (getX() <= 950){
             move(4);
             }
            
@@ -73,7 +78,7 @@ public class farmerEasy extends Actor
         }
         if (Greenfoot.isKeyDown("left")) {
            switchImage();
-           if (getX() >= 100){
+           if (getX() >= 60){
            move(-4);
         }
         }

@@ -22,7 +22,7 @@ public class hardWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 400, 1); 
-        addObject(new farmerEasy(),60, getHeight()/2 + 108);
+        addObject(new farmer(),60, getHeight()/2 + 108);
         addObject(new seedpack(),950,50);
         addObject(new countT(),950,130);
         addObject(new heart(),50,50);
