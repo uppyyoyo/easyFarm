@@ -19,7 +19,7 @@ public class scoreWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 400, 1); 
-        showText("score : " + scorecounteer.score, getWidth()/2, getHeight()/2 - 30);
+        showText(input.xxx + " score : " + scorecounteer.score, getWidth()/2, getHeight()/2 - 30);
         addObject(new back(), getWidth()/2, getHeight()/2 + 40);
     }
     public void act(){
